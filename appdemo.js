@@ -7,7 +7,7 @@ const {MongoClient} = require("mongodb");
 const url = 'mongodb://localhost:27017/';
 const databasename = "SSDI-Sprint2";
 
-app.get('/', async(req,res) => {
+app.get('/agents', async(req,res) => {
     MongoClient.connect(url ,{ useNewUrlParser: true })
         .then((client) => {
             const connect = client.db(databasename);
