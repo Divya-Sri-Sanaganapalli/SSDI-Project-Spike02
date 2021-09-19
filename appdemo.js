@@ -4,6 +4,7 @@ const port = 3000;
 
 const {MongoClient} = require("mongodb");
 
+//db
 const url = 'mongodb://localhost:27017/';
 const databasename = "SSDI-Sprint2";
 
